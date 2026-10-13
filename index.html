@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Avinandan Pal — Robotics & AI portfolio featuring robotics, computer vision, LLM, machine learning and UI/UX projects." />
   <meta name="theme-color" content="#070b14" />
-  <title>Avinandan Pal — Robotics & AI | B.Tech Engineer</title>
+  <title>Avinandan Pal — Robotics & Applied AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -258,6 +258,7 @@
     .project-title { font-size: 1.35rem; line-height: 1.22; margin-bottom: 11px; }
     .project-desc { color: var(--muted); font-size: .9rem; margin-bottom: 18px; max-width: 670px; }
     .project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .project-note { color: var(--muted); font-size: .84rem; margin-top: 18px; }
     .text-link { text-decoration: none; color: var(--text); font-weight: 600; font-size: .84rem; }
     .text-link span { color: var(--cyan); }
     .project-side { text-align: right; min-width: 180px; }
@@ -426,13 +427,20 @@
           <h2 class="section-title">A few things I've <em>built.</em></h2>
         </div>
         <div class="projects-grid">
+          <article class="project-card reveal">
+            <p class="project-domain">Computer Vision · Applied ML</p>
+            <h3 class="project-title">Single-Image Face Recognition System</h3>
+            <p class="project-desc">A camera-based recognition pipeline with single-photo enrollment and dynamic add/delete without retraining. It uses OpenCV YuNet/SFace models, cosine-similarity matching, SQLite-backed identity records, and an evaluation script for accuracy, precision, recall, F1, FAR, FRR, and FPS.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">YuNet / SFace</span><span class="tag">SQLite</span><span class="tag">Streamlit</span></div>
+            <div class="project-links"><a class="text-link" href="https://github.com/AVINANDANPAL2004/face-recongnition-by-single-photo" target="_blank" rel="noreferrer">Source & README <span>↗</span></a></div>
+          </article>
           <article class="project-card featured reveal">
             <div>
               <p class="project-domain">Robotics · 2025</p>
               <h3 class="project-title">Autonomous Fire-Extinguishing Robot</h3>
               <p class="project-desc">A ground robot designed for real-time fire response, combining ESP32 control, sensor fusion, obstacle avoidance and simulation in Gazebo.</p>
               <div class="tags"><span class="tag">ESP32</span><span class="tag">C++</span><span class="tag">Sensor Fusion</span><span class="tag">Gazebo</span></div>
-              <div class="project-links"><a class="text-link" href="https://github.com/AVINANDANPAL2004" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+              <p class="project-note">Project documentation and source repository are not published yet.</p>
             </div>
             <div class="project-side"><strong>01</strong><small>Autonomy + embedded control</small></div>
           </article>
@@ -442,6 +450,7 @@
             <h3 class="project-title">Generative AI for Plastic-Degrading Enzymes</h3>
             <p class="project-desc">A research prototype combining protein data, language-model methods and interactive tooling to explore plastic-degrading enzyme generation.</p>
             <div class="tags"><span class="tag">PyTorch</span><span class="tag">BioPython</span><span class="tag">Streamlit</span><span class="tag">UniProt</span></div>
+            <p class="project-note">Research code is currently private; a reproducible public write-up is a next step.</p>
           </article>
 
           <article class="project-card reveal">
@@ -449,6 +458,7 @@
             <h3 class="project-title">Enhanced Visual Correspondence Learning</h3>
             <p class="project-desc">A confidence-aware, multi-scale visual correspondence framework using DINOv2 and Optimal Transport for semantic keypoint matching under viewpoint and occlusion variation.</p>
             <div class="tags"><span class="tag">DINOv2</span><span class="tag">Optimal Transport</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span></div>
+            <p class="project-note">Research prototype; public implementation and evaluation details are still being prepared.</p>
           </article>
 
           <article class="project-card reveal">
@@ -459,10 +469,11 @@
           </article>
 
           <article class="project-card reveal">
-            <p class="project-domain">More on GitHub</p>
-            <h3 class="project-title">Experiments, prototypes & ongoing builds</h3>
-            <p class="project-desc">A growing collection of implementation work across AI, robotics and design. Head to GitHub for the latest iterations.</p>
-            <div class="project-links"><a class="text-link" href="https://github.com/AVINANDANPAL2004" target="_blank" rel="noreferrer">Browse GitHub <span>↗</span></a></div>
+            <p class="project-domain">Supply Chain AI · Early-stage concept</p>
+            <h3 class="project-title">BharatOps AI</h3>
+            <p class="project-desc">A project in development exploring supply-chain risk intelligence for Indian small and medium-sized manufacturers: delivery-delay prediction, inventory-shortage alerts, supplier analytics, and explainable recommendations.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">MongoDB</span><span class="tag">Explainable AI</span></div>
+            <p class="project-note">Early-stage direction — implementation, baselines, and evaluation will be published as they are built.</p>
           </article>
         </div>
       </div>
@@ -475,7 +486,7 @@
           <h2 class="section-title">Learning by <em>building.</em></h2>
         </div>
         <div class="timeline">
-          <div class="timeline-item reveal"><p class="timeline-date">2023 — PRESENT</p><h3 class="timeline-title">B.Tech — Robotics & AI</h3><p class="timeline-sub">SASTRA Deemed-to-be University</p><p class="timeline-desc">Focused on embedded systems, AI, signal processing and hands-on engineering.</p></div>
+          <div class="timeline-item reveal"><p class="timeline-date">2023 — PRESENT</p><h3 class="timeline-title">B.Tech — Robotics & Automation Engineering</h3><p class="timeline-sub">SASTRA Deemed-to-be University</p><p class="timeline-desc">Focused on embedded systems, AI, signal processing and hands-on engineering.</p></div>
           <div class="timeline-item reveal"><p class="timeline-date">2024 — 2025</p><h3 class="timeline-title">Google UX Design Professional Certificate</h3><p class="timeline-sub">Coursera</p><p class="timeline-desc">Built foundations in UX research, wireframing, prototyping and user testing.</p></div>
           <div class="timeline-item reveal"><p class="timeline-date">2025</p><h3 class="timeline-title">Autonomous Fire-Extinguisher Bot</h3><p class="timeline-sub">Robotics project</p><p class="timeline-desc">Designed hardware and implemented control logic with ESP32, sensors, C++ and Gazebo.</p></div>
           <div class="timeline-item reveal"><p class="timeline-date">2026</p><h3 class="timeline-title">AI + Protein / LLM Exploration</h3><p class="timeline-sub">Research direction</p><p class="timeline-desc">Exploring transformer-based workflows and bioinformatics for protein-focused generation and prediction.</p></div>
